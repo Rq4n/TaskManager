@@ -3,7 +3,12 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList <Task> tarefas = new ArrayList<>();
-        tarefas.isEmpty();
+        TaskManager manager = new TaskManager();
+        manager.adicionarTarefa("Levar o lixo", true);
+        manager.adicionarTarefa("Arrumar a cama", true);
+
+        manager.listarTarefas();
+        manager.removerTarefas(2);
+        manager.listarTarefas();
     }
 }
