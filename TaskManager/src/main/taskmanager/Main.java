@@ -1,14 +1,21 @@
 package main.taskmanager;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         TaskManager manager = new TaskManager();
-        manager.adicionarTarefa("Levar o lixo", true);
-        manager.adicionarTarefa("Arrumar a cama", true);
+        Scanner scanner = new Scanner(System.in);
 
-        manager.listarTarefas();
-        manager.removerTarefas(2);
-        manager.listarTarefas();
+        while (true) {
+            System.out.println("===== GERENCIADOR DE TAREFAS =====");
+            System.out.println(" 1 - ADICIONAR TAREFA");
+            System.out.println(" 2 - LISTAR TAREFAS");
+            System.out.println(" 3 - REMOVER TAREFA");
+            System.out.println(" 4 - MARCAR TAREFA COMO CONCLUIDA");
+            System.out.println(" 0 - SAIR");
+            System.out.println(" MARCAR UMA OPCAO:");
+        }
+        
     }
 }

@@ -1,7 +1,5 @@
 package main.taskmanager;
 
-import com.sun.source.util.TaskListener;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +23,7 @@ public class TaskManager {
         }
     }
     //Remover tarefas
-    public void removerTarefas(int id){
+    public void removerTarefa(int id){
         boolean removido = tarefas.removeIf(tarefas-> tarefas.getId() == id );
         if (removido){
             System.out.println("Tarefa:"+id+" Removida");
