@@ -5,11 +5,10 @@ public class Task {
     private String descricao;
     private boolean concluida;
 
-    public void Task(int id, String descricao, boolean concluida){
+    public Task (int id,String descricao, boolean concluida){
         this.id = id;
         this.descricao = descricao;
         this.concluida = concluida;
-
     }
 
     public void setId(int id) {
@@ -32,7 +31,7 @@ public class Task {
         return descricao;
     }
     public boolean isConcluida(){
-        return isConcluida();
+        return concluida;
     }
     @Override
     public String toString(){
