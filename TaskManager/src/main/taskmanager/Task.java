@@ -9,6 +9,7 @@ public class Task {
         this.id = id;
         this.descricao = descricao;
         this.concluida = concluida;
+
     }
 
     public void setId(int id) {
@@ -20,7 +21,7 @@ public class Task {
     }
 
     public void setConcluida(boolean concluida){
-        this.descricao = descricao;
+        this.concluida = concluida;
     }
 
     public int getId() {
@@ -30,7 +31,11 @@ public class Task {
     public String getDescricao() {
         return descricao;
     }
-    public boolean isConcluida() {
+    public boolean isConcluida(){
         return isConcluida();
+    }
+    @Override
+    public String toString(){
+    return " | ID: "+id+" | Descricao: " +descricao+ " | Concluida: " + (concluida ? "Sim | " : "Pendente | ");
     }
 }
